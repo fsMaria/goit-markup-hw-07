@@ -198,7 +198,7 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
 }
-.name {
+.team__name {
   color: var(--title-text-color);
   font-size: 16px;
   font-weight: 500;
@@ -206,10 +206,11 @@ img {
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
-.profession {
+.team__profession {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 /* КНОПКИ */
 .buttons {
@@ -430,9 +431,7 @@ html {
 .team__item:not(:last-child) {
   margin-right: var(--card-set-gap);
 }
-.profession {
-  margin-bottom: 16px;
-}
+
 /* СЕКЦИИ */
 .section {
   padding-top: 94px;
@@ -563,13 +562,13 @@ html {
 }
 
 /* ИКОНКИ КАРТОЧЕК */
-.team-icon {
+.team__network {
   display: flex;
 }
-.team-icon-list:not(:last-child) {
+.team__icon:not(:last-child) {
   margin-right: 10px;
 }
-.team-link {
+.team__link {
   width: 100%;
   height: 100%;
   display: inline-block;
@@ -585,14 +584,14 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-link:hover,
-.team-link:focus {
+.team__link:hover,
+.team__link:focus {
   border-radius: 50%;
   background-color: var(--accent-color);
   fill: var(--white-color);
 }
 /*  ПОСТОЯННЫЕ КЛИЕНТЫ */
-.client-link {
+.client__link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -605,12 +604,12 @@ html {
   transition-duration: var(--trn-time);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client-icon {
+.client__icon {
   width: 170px;
   height: 92px;
 }
-.client-link:hover,
-.client-link:focus {
+.client__link:hover,
+.client__link:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
