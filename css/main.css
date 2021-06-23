@@ -1,0 +1,23 @@
+.header {
+  border-bottom: 1px solid;
+  border-color: var(--line-color);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation .navigation__list {
+  display: flex;
+}
+
+.navigation .navigation__list__item:not(:last-child) {
+  margin-right: 50px;
+}
+/*# sourceMappingURL=main.css.map */
