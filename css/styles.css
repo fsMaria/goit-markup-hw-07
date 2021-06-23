@@ -190,13 +190,14 @@ img {
 .team {
   background-color: var(--team-color);
 }
-.section-title {
+.title {
   color: var(--title-text-color);
   font-size: 36px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 50px;
 }
 .team__name {
   color: var(--title-text-color);
@@ -213,7 +214,7 @@ img {
   margin-bottom: 16px;
 }
 /* КНОПКИ */
-.buttons {
+.buttons-menu__button {
   min-width: 130px;
   min-height: 38px;
   display: inline-block;
@@ -233,8 +234,8 @@ img {
   transition-duration: var(--trn-time);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.buttons:hover,
-.buttons:focus {
+.buttons-menu__button:hover,
+.bbuttons-menu__button:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
   cursor: pointer;
@@ -243,31 +244,6 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.prime-button {
-  min-width: 73px;
-  min-height: 38px;
-  display: inline-block;
-  padding: 6px 22px;
-  border-radius: 4px;
-  text-align: center;
-  background-color: var(--accent-color);
-  color: var(--white-color);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  border: none;
-  transition-property: box-shadow;
-  transition-duration: var(--trn-time);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.prime-button:hover,
-.prime-button:focus {
-  cursor: pointer;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
 
 /* КОНТАКТИ */
 .contacts a {
@@ -313,7 +289,7 @@ img {
 }
 
 /* РАЗРАБОТКА */
-.type {
+.projects__develop {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -346,7 +322,7 @@ html {
 }
 
 /* СКРЫТЫЕ СЕКЦИИ */
-.hidden-section {
+.hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -371,7 +347,7 @@ html {
   display: flex;
   margin-left: auto;
 }
-.contacts .contacts-list:not(:last-child) {
+.contacts .contacts__list:not(:last-child) {
   margin-right: 50px;
 }
 .navigation {
@@ -395,10 +371,7 @@ html {
   flex-wrap: wrap;
 }
 
-.section-title {
-  text-align: center;
-  margin-bottom: 50px;
-}
+
 .work__list {
   display: flex;
 }
@@ -449,7 +422,7 @@ html {
 }
 /* КАРТОЧКИ РАЗРАБОТОК */
 
-.type-container {
+.projects__name {
   display: block;
   background-color: var(--white-color);
   width: 370px;
@@ -458,53 +431,53 @@ html {
   border-width: 0 1px 1px 1px;
   padding: 20px 24px;
 }
-.type-box {
+.projects {
   display: block;
   display: flex;
   flex-wrap: wrap;
 }
-.type-box-item img {
+.projects__item img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.type-box-item {
+.tprojects__item {
   display: block;
   background-color: var(--white-color);
   max-width: 100%;
 }
-.type-box-item {
+.projects__item{
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.type-box-item a {
+.projects__item a {
   transition-property: box-shadow;
   transition-duration: var(--trn-time);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.type-box-item a:hover,
-.type-box-item a:focus {
+.projects__item a:hover,
+.projects__item a:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.type-link {
+.projects__link {
   display: block;
 }
 
-.type-box-item:not(:nth-child(3n)) {
+.projects__item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
-.type-box-item:not(:nth-last-child(-n + 3)) {
+.projects__item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
-.type-box-item .type {
+.projects__item .projects__develop {
   margin-top: 0;
   margin-bottom: 4px;
 }
-.type-develop {
+.projects__type-develop {
   margin-bottom: 20px;
 }
 
@@ -527,13 +500,13 @@ html {
 /* СТИЛИЗАЦИЯ ИЗОБРАЖЕНИЙ И ИКОНОК */
 
 /* ИКОНКИ КОНТАКТОВ ХЕДЕРА */
-.contacts-mail-icon {
+.contacts__mail-icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
-.contacts-phone-icon {
+.contacts__phone-icon {
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -668,16 +641,16 @@ html {
 
 /* КАРТОЧКИ РАЗРАБОТОК */
 
-.type-link:hover .overlay,
-.type-link:focus .overlay {
+.projects__link:hover .projects__overlay,
+.projects__link:focus .projects__overlay {
   transform: translatey(0);
 }
-.box {
+.projects__box {
   position: relative;
   overflow-y: hidden;
 }
 
-.overlay {
+.projects__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -778,23 +751,18 @@ html {
   transition-duration: var(--trn-time);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* [data-modal-close] svg,
-[data-modal-close] svg {
-  transition-property: fill;
-  transition-duration: var(--trn-time);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} */
+
 [data-modal-close]:hover,
 [data-modal-close]:focus {
   fill: var(--accent-color);
 }
 /*  ФОРМЫ ЗАЯВКИ */
 
-.form {
+.modal__form {
   width: 100%;
  
 }
-.provoke-text {
+.modal__provoke-text {
   display: inline-block;
   margin-bottom: 12px;
   font-size: 20px;
@@ -802,21 +770,21 @@ html {
   color: var(--title-text-color);
  
 }
-.form-group {
+.modal__form-group {
 display: flex;
 flex-direction: column;
 margin-bottom: 10px;
 position: relative;
 }
 
-.modal-icon {
+.modal__icon {
   position: absolute;
   top: 50%;
   left: 12px;
   transform: translateY(-5%);
 }
 
-.form-input{
+.modal__input{
   height: 40px;
   border: 1px solid var(--input-color);
   border-radius: 4px;
@@ -826,27 +794,27 @@ position: relative;
   transition-duration: var(--trn-time);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input:hover,
-.form-input:focus {
+.modal__input:hover,
+.modal__input:focus {
   border: 1px solid var(--accent-color);
   outline: none;
 }
-.form-input + .modal-icon,
-.form-input + .modal-icon{
+.modal__input + .modal__icon,
+.modal__input + .modal__icon{
   transition-property:  fill;
   transition-duration: var(--trn-time);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input:hover + .modal-icon,
-.form-input:focus + .modal-icon{
+.modal__input:hover + .modal__icon,
+.modal__input:focus + .modal__icon{
 fill: var(--accent-color);
 }
 
-.form-group label{
+.modal__form-group label{
   font-size: 12px;
   margin-bottom: 4px;
 }
-.comment {
+.modal__comment {
   width: 448px;
   height: 120px;
   border: 1px solid var(--input-color);
@@ -858,32 +826,22 @@ fill: var(--accent-color);
   transition-duration: var(--trn-time);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
-.comment:hover,
-.comment:focus {
+.modal__comment:hover,
+.modal__comment:focus {
   border: 1px solid var(--accent-color);
   outline: none;
 }
-.form-group .comment::placeholder {
+.modal__form-group .modal__comment::placeholder {
   font-size: 14px;
   color: var(--placeholder-color);
 }
 
-.agree-form {
+.modal__checkbox {
   margin-top: 20px;
   
 }
 
-.checkbox-hidden {
-    position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-.conditions-icon {
+.modal__checkbox-icon {
   margin-right: 7px;
   width: 16px;
   height: 15px;
@@ -892,7 +850,7 @@ fill: var(--accent-color);
   border-radius: 1px;
  display: flex;
 }
-.agree-control {
+.modal__checkbox-label {
  font-size: 14px;
  display: flex;
 justify-content: center;
@@ -901,11 +859,11 @@ align-items: center;
 }
 
 
-.modal-form-check:focus + .agree-control .conditions-icon{
+.modal__checkbox-input:focus + .modal__checkbox-label .modal__checkbox-icon{
   border: 3px solid var(--accent-color);
 }
 
-.modal-form-check:checked + .agree-control .conditions-icon {
+.modal__checkbox-input:checked + .modal__checkbox-label .modal__checkbox-icon {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   border-radius: 4px;
@@ -915,7 +873,7 @@ align-items: center;
 
 
 
-.sub-bt{
+.modal__button{
   display: block;
   margin: auto;
   border-radius: 4px;
@@ -935,8 +893,8 @@ align-items: center;
   transition-duration: var(--trn-time);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.sub-bt:hover,
-.sub-bt:focus {
+.modal__button:hover,
+.modal__button:focus {
   cursor: pointer;
   background-color: var(--hover-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -944,12 +902,10 @@ align-items: center;
   border-radius: 0px 0px 4px 4px;
   border-radius: 4px;
   }
-.form-conditions-link {
+.modal__checkbox-link {
 color: var(--accent-color);
 border-bottom: 1px solid var(--accent-color);
 }
-
-
 
 
 
