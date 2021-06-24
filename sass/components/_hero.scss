@@ -1,0 +1,33 @@
+
+.hero {
+    max-width: 1600px;
+    height: 600px;
+    background-color: $bg-hero-gradient;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 58, 57, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../imagen/imghero.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .hero__title {
+    margin-top: 0;
+    margin-bottom: $card-set-gap;
+    color: $white-color;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  } 
+  @include button() {
+    padding: 10px 32px;
+    
+}

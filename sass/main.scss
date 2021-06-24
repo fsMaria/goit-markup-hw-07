@@ -1,2 +1,6 @@
-
-  @import 'components/header';
+@import './utils/variables';
+@import './base/normalize';
+@import './components/header';
+@import './components/logo';
+@import './components/contacts';
+@import './components/hero';
