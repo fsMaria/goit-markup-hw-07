@@ -13,11 +13,11 @@
   align-items: center;
 }
 
-.navigation .navigation__list {
+.navigation__list {
   display: flex;
 }
 
-.navigation .navigation__list__item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -37,7 +37,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation__link:hover, .navigation__link:focus, .navigation__link:active {
+.navigation__link__link:hover, .navigation__link:focus, .navigation__link:active {
   color: var(--accent-color);
 }
 

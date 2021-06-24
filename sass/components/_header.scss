@@ -12,15 +12,16 @@
 .navigation {
   display: flex;
   align-items: center;
+}
 
 .navigation__list {
   display: flex;
-
-  &__item:not(:last-child) {
+}
+.navigation__item:not(:last-child) {
   margin-right: 50px;
+
 }
-}
-}
+
 .navigation__link {
   display: block;
   display: flex;
@@ -37,7 +38,7 @@
   transition-duration: var(--trn-time);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
-      &:hover,
+      &__link:hover,
       &:focus,
       &:active {
       color: var(--accent-color);
