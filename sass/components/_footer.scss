@@ -1,5 +1,7 @@
 .footer {
     background-color: $secondary-background-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .footer__link {
     color: rgba(255, 255, 255, 0.6);
@@ -8,10 +10,10 @@
     transition-property: color;
     transition-duration: $transition-time;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .footer__contacts a:hover,
-  .footer__contacts a:focus {
-    color: $accent-color;
+        &:hover,
+        &:focus {
+        color: $accent-color;
+    }
   }
   .footer__address {
     font-style: normal;
@@ -25,6 +27,7 @@
     align-items: baseline;
   }
   
+//      ПРАВИЛА ДЛЯ ИКОНОК СОЦСЕТЕЙ
   .footer__network {
     margin-left: 70px;
   }
