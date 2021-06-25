@@ -797,6 +797,14 @@ img {
   margin-right: 8px;
 }
 
+.button-menu--prime-button {
+  min-width: 73px;
+  min-height: 38px;
+  background-color: #2196f3;
+  color: white;
+  transition-property: box-shadow;
+}
+
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -817,7 +825,7 @@ img {
 }
 
 .projects__item {
-  flex-basis: calc(100% - 60px / 3);
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .projects__link {

@@ -38,3 +38,11 @@
       &:not(:last-child) {
     margin-right: 8px;
   }}
+
+  .button-menu--prime-button {
+    min-width: 73px;
+    min-height: 38px;
+    background-color: $accent-color;
+    color: $white-color;
+    transition-property: box-shadow;
+  }

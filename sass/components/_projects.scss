@@ -15,7 +15,7 @@
     }
   }
   .projects__item{
-    flex-basis: calc(100% - #{$ItemMargin} / 3);}
+    flex-basis: calc((100% - #{$ItemMargin}) / 3);}
 
 
   .projects__link {

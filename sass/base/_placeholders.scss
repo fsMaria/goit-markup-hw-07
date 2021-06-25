@@ -11,13 +11,4 @@
         letter-spacing: 0.06em;
         text-align: center;
         border: none;
-      
-        transition-property: background-color;
-        transition-duration: $trn-time;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            &:hover,
-            &:focus {
-                cursor: pointer;
-                background-color: $hover-color;
-}
-}
+    }
