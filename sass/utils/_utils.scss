@@ -1,7 +1,7 @@
 .page {
     font-family: Roboto, sans-serif;
-    color: var(--primary-text-color);
-    background-color: var(--white-color);
+    color: $primary-text-color;
+    background-color: $white-color;
     margin: 0;
   }
   ul {
@@ -48,7 +48,7 @@
     padding-bottom: 94px;
   }
   .title {
-    color: var(--title-text-color);
+    color: $title-text-color;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.2;

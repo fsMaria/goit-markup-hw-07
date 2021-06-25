@@ -101,7 +101,7 @@ img {
   letter-spacing: 0.02em;
   position: relative;
   transition-property: color;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -163,7 +163,7 @@ img {
   line-height: 1.1;
   letter-spacing: 0.02em;
   transition-property: color;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -225,7 +225,7 @@ img {
   text-align: center;
   border: none;
   transition-property: background-color;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -350,7 +350,7 @@ img {
   height: 44px;
   border-radius: 50%;
   transition-property: background-color, fill;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -413,7 +413,7 @@ img {
   border-radius: 4px;
   fill: #afb1b8;
   transition-property: border-color, fill;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -438,7 +438,7 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   transition-property: color;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -484,7 +484,7 @@ img {
   height: 44px;
   border-radius: 50%;
   transition-property: background-color;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -538,7 +538,7 @@ img {
   border: none;
   position: relative;
   transition-property: background-color;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -564,7 +564,7 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition-property: opacity;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -580,7 +580,7 @@ img {
   padding: 52px 44px 28px 36px;
   transform: translate(-50%, -50%) scale(1);
   transition-property: transform;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   max-width: 528px;
   min-height: 581px;
@@ -607,7 +607,7 @@ img {
   align-items: center;
   cursor: pointer;
   transition-property: fill;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -647,7 +647,7 @@ img {
   border-radius: 4px;
   padding: 11px 12px 11px 43px;
   transition-property: border, fill;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -658,7 +658,7 @@ img {
 
 .modal__input + .modal__icon {
   transition-property: fill;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -680,7 +680,7 @@ img {
   resize: none;
   padding: 12px 16px;
   transition-property: border;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -746,7 +746,7 @@ img {
   align-items: center;
   border: none;
   transition-property: background-color, box-shadow;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -781,7 +781,7 @@ img {
   font-family: inherit;
   border: none;
   transition-property: background-color, color, box-shadow;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -831,7 +831,7 @@ img {
 .projects__link {
   display: block;
   transition-property: box-shadow;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -885,7 +885,7 @@ img {
   background-color: rgba(33, 150, 243, 0.9);
   transform: translatey(101%);
   transition-property: transform, opacity;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: white;
   font-weight: 400;
