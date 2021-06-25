@@ -36,3 +36,25 @@
   .is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.3);
   }
+  [data-modal-close] {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $modal-button-color;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition-property: fill;
+    transition-duration: $transition-time;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+        fill: $accent-color;
+    }
+  }
+  
