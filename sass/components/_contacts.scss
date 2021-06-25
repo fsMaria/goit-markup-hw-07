@@ -17,7 +17,7 @@
     line-height: 1.1;
     letter-spacing: 0.02em;
     transition-property: color;
-    transition-duration: $trn-time;
+    transition-duration: $transition-time;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
         &:focus {
