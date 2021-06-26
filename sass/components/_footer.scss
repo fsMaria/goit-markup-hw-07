@@ -20,7 +20,14 @@
     font-size: 14px;
     color: $white-color;
     line-height: 1.7;
-    margin-top: 20px;
+  }
+  .footer__location {
+    margin-bottom: 20px;
+  }
+  .footer__address {
+      &:not(:last-child){
+        margin-bottom: 20px;
+      }
   }
   .footer .container {
     display: flex;
