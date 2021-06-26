@@ -18,10 +18,6 @@
     display: flex;
     align-items: center;
   }
-  .feature {
-      &:not(:last-child){
-    margin-right: $card-set-gap;
-  }}
 
   .feature__item {
     width: 270px;
