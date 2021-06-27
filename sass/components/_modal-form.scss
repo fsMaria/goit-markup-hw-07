@@ -127,7 +127,16 @@
 
 // ПРАВИЛО ДЛЯ КНОПКИ МОДАЛЬНОГО ОКНА
 .modal__button{
-  @extend %button;
+  border-radius: 4px;
+  display: inline-block;
+  min-width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  text-align: center;
+  border: none;
     margin: auto;  
     margin-top: 30px;
     color: $white-color;
