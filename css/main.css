@@ -257,9 +257,6 @@ img {
   align-items: center;
 }
 
-.feature:not(:last-child) {
-  margin-right: 30px;
-}
 
 .feature__item {
   width: 270px;
